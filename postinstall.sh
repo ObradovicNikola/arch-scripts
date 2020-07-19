@@ -1,3 +1,4 @@
+#!/bin/sh
 # This is a script for setting up arch based linux system post installation
 # Most of it is shamelessly stolen from https://github.com/LukeSmithxyz/LARBS/blob/master/larbs.sh
 
