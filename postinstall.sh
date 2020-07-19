@@ -53,7 +53,8 @@ adduserandpass() { \
 
 refreshkeys() { \
 	dialog --infobox "Refreshing Arch Keyring..." 4 40
-	pacman --noconfirm -Sy archlinux-keyring >/dev/null 2>&1}
+	pacman --noconfirm -Sy archlinux-keyring >/dev/null 2>&1
+}
 
 
 newperms() { # Set special sudoers settings for install (or after).
@@ -73,7 +74,8 @@ manualinstall() { # Installs $1 manually if not installed. Used only for AUR hel
 
 maininstall() { # Installs all needed programs from main repo.
 	dialog --title "Installation from main repo" --infobox "Installing \`$1\` ($n of $total). $1 $2" 5 70
-	installpkg "$1"}
+	installpkg "$1"
+}
 
 gitmakeinstall() { # make + make install from git repo
 	progname="$(basename "$1" .git)"
@@ -89,12 +91,14 @@ gitmakeinstall() { # make + make install from git repo
 aurinstall() { \
 	dialog --title "Installation from AUR" --infobox "Installing \`$1\` ($n of $total) from the AUR. $1 $2" 5 70
 	echo "$aurinstalled" | grep "^$1$" >/dev/null 2>&1 && return
-	sudo -u "$name" $aurhelper -S --noconfirm "$1" >/dev/null 2>&1}
+	sudo -u "$name" $aurhelper -S --noconfirm "$1" >/dev/null 2>&1
+}
 
 pipinstall() { \
 	dialog --title "Pip Installation" --infobox "Installing the Python package \`$1\` ($n of $total). $1 $2" 5 70
 	command -v pip || installpkg python-pip >/dev/null 2>&1
-	yes | pip install "$1"}
+	yes | pip install "$1"
+}
 
 installationloop() { \
 	([ -f "$progsfile" ] && cp "$progsfile" /tmp/progs.csv) || curl -Ls "$progsfile" | sed '/^#/d' | eval grep "$grepseq" > /tmp/progs.csv
