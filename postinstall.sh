@@ -56,9 +56,9 @@ refreshkeys() { \
 	pacman --noconfirm -Sy archlinux-keyring >/dev/null 2>&1}
 
 
-# newperms() { # Set special sudoers settings for install (or after).
-	# sed -i "/#LARBS/d" /etc/sudoers
-	# echo "$* #LARBS" >> /etc/sudoers ;}
+newperms() { # Set special sudoers settings for install (or after).
+	sed -i "/#LARBS/d" /etc/sudoers
+	echo "$* #LARBS" >> /etc/sudoers ;}
 
 manualinstall() { # Installs $1 manually if not installed. Used only for AUR helper here.
 	[ -f "/usr/bin/$1" ] || (
