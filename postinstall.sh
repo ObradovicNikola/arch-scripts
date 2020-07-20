@@ -227,7 +227,7 @@ killall pulseaudio; sudo -u "$name" pulseaudio --start
 
 cd /home/$name
 curl -LO https://raw.githubusercontent.com/ObradovicNikola/arch-scripts/master/initiallogin.sh
-sed '1 a\~/initiallogin.sh' /home/$name/.zprofile
+sed '1 a\~/initiallogin.sh' "/home/$name/.zprofile"
 # Last message! Install complete!
 finalize
 clear
