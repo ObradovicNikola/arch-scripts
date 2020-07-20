@@ -56,7 +56,6 @@ refreshkeys() { \
 	pacman --noconfirm -Sy archlinux-keyring >/dev/null 2>&1
 }
 
-
 newperms() { # Set special sudoers settings for install (or after).
 	sed -i "/#ARCHIKA/d" /etc/sudoers
 	echo "$* #ARCHIKA" >> /etc/sudoers ;}
