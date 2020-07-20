@@ -3,7 +3,7 @@ sudo pacman -S xdg-user-dirs
 
 xdg-user-dirs-update
 
-lxappearance
+startx /usr/bin/lxappearance
 
 # use lxappearance to set cursor theme globaly
 
