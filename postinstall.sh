@@ -87,7 +87,7 @@ gitmakeinstall() { # make + make install from git repo
 	make >/dev/null 2>&1
 	make install >/dev/null 2>&1
 	mkdir -p "/home/$name/.local/bin"
-	cp "$dir/$1" "/home/$name/.local/bin"
+	cp "$dir/$progname" "/home/$name/.local/bin"
 	cd /tmp || return ;}
 
 aurinstall() { \
