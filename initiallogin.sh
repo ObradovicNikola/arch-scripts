@@ -9,4 +9,4 @@ lxappearance
 
 # maybe automatically run this script and rm it?
 
-sed -i '$ d' ~/.zprofile
+sed '2d' ~/.zprofile
