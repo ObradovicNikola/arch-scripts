@@ -2,6 +2,7 @@
 ,xorg,"is the graphical server."
 ,xorg-xinit,"starts the graphical server."
 ,zsh,"zed shell"
+,lxappearance,"configures gtk themes"
 ,firefox,"browser"
 ,dmenu,"launcher"
 ,ttf-linux-libertine,"provides the sans and serif fonts for LARBS."
