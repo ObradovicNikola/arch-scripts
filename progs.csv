@@ -8,6 +8,7 @@
 ,ttf-linux-libertine,"provides the sans and serif fonts for LARBS."
 ,zsh,"zed shell"
 ,xterm,"terminal for X"
+,htop,"interactive process viewer"
 ,ttf-fira-code,"fira code monospace font"
 ,ttf-joypixels,"emoji font"
 ,thunar,"file manager"
