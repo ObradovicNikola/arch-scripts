@@ -19,3 +19,6 @@ realtek wifi chip, rtw88 driver from AUR
 https://aur.archlinux.org/packages/rtw88-dkms-git/
 
 https://github.com/lwfinger/rtw88
+
+# check which graphics card is in use
+`glxinfo|egrep "OpenGL vendor|OpenGL renderer"`
