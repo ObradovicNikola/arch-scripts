@@ -12,6 +12,7 @@
 ,ttf-fira-code,"fira code monospace font"
 ,ttf-joypixels,"emoji font"
 ,thunar,"file manager"
+,gvfs,"Optional dep for thunar: Adds support trash bin, file storage, usb mounting"
 ,arandr,"is a UI for screen adjustment."
 ,xcompmgr,"is for transparency and removing screen-tearing."
 ,dunst,"is a suckless notification system."
