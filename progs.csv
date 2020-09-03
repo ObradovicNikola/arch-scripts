@@ -14,6 +14,7 @@
 ,thunar,"file manager"
 ,gvfs,"Optional dep for thunar: Adds support trash bin, file storage, usb mounting"
 A,thunar-vcs-plugin,"Thunar plugin for version control systems (git and svn)"
+,tumbler,"D-Bus service for applications to request thumbnails"
 ,arandr,"is a UI for screen adjustment."
 ,xcompmgr,"is for transparency and removing screen-tearing."
 ,dunst,"is a suckless notification system."
